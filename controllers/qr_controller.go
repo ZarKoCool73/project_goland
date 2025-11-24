@@ -35,7 +35,7 @@ func QRHandler(c *fiber.Ctx) error {
 	}
 
 	return c.JSON(fiber.Map{
-		"Q": Q,
-		"R": R,
+		"matrixQ": Q,
+		"matrixR": R,
 	})
 }
