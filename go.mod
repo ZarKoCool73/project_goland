@@ -2,21 +2,7 @@ module talenthouse/go-api
 
 go 1.25.4
 
-replace golang.org/x/sys => ../../../../go/src/golang.org/x/sys
-
-replace golang.org/x/net => ../../../../go/src/golang.org/x/net
-
-replace golang.org/x/text => ../../../../go/src/golang.org/x/text
-
-replace golang.org/x/crypto => ../../../../go/src/golang.org/x/crypto
-
-replace golang.org/x/exp => ../../../../go/src/golang.org/x/exp
-
-replace gonum.org/v1/gonum => ../../../../go/src/gonum.org/v1/gonum
-
-require (
-	github.com/gofiber/fiber/v2 v2.52.10
-)
+require github.com/gofiber/fiber/v2 v2.52.10
 
 require (
 	github.com/andybalholm/brotli v1.1.0 // indirect
