@@ -12,7 +12,7 @@ func QRHandler(c *fiber.Ctx) error {
 	// Parsear el body
 	if err := c.BodyParser(&A); err != nil || len(A) == 0 {
 		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
-			"error": "Invalid input",
+			"error": "Entrada inválida. Verifique el formato de la matriz.",
 		})
 	}
 
@@ -21,7 +21,7 @@ func QRHandler(c *fiber.Ctx) error {
 	for _, row := range A {
 		if len(row) != columns {
 			return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
-				"error": "All rows must have the same length",
+				"error": "Todas las filas deben tener la misma cantidad de columnas.",
 			})
 		}
 	}
