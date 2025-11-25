@@ -7,5 +7,5 @@ import (
 )
 
 func SetupRoutes(app *fiber.App) {
-	app.Post("/factorizar", controllers.QRHandler)
+	app.Post("/api/v1/factorize", controllers.QRHandler)
 }
